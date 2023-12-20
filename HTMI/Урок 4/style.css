@@ -1,0 +1,49 @@
+table{
+    /* border: 3px solid slateblue; */
+    border-collapse: collapse;
+    margin: auto;
+}
+    
+td, th{
+    border: 1px solid rgb(93, 203, 97);
+    background-color: rgb(186, 216, 216);
+    padding: 20px;
+    color: blue;
+    text-decoration:underline;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: auto;
+    height: auto
+    ;
+}
+
+/* th{
+    border: 1px solid rgb(60, 63, 60);
+}  Это если нужно присвоить свойство ячейке отдельно*/
+
+/* .one{
+    background-color: rgb(193, 140, 221);
+} окраска через класс*/
+
+table tr:nth-child(1){
+    background-color: rgb(152, 110, 191);
+}
+
+.leo img{
+    width: 100%;
+    height: 100%;
+}
+
+.hourse img{
+    width: 100%;
+    height: 100%;
+}
+
+.leo, .hourse{
+    padding: 0px;
+    
+}
+
+table tr:nth-child(4){
+    text-align: center;
+}

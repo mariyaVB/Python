@@ -1,0 +1,140 @@
+/* {
+    margin: 0;
+    padding: 0;
+} */
+
+.se1{
+    background-color: aquamarine;
+    padding: 20px;
+}
+
+.se1>div{
+    display: grid;
+    font-size: 14pt;
+    grid-template-columns: 5fr 1fr 3fr;
+    /* gap: 15px; */
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+
+}
+
+.se1>div>div{
+    background-color: rgb(165, 125, 245);
+    padding: 15px;
+}
+
+.se2{
+    background-color: rgb(145, 144, 142);
+    padding: 20px;
+}
+
+.se2>div{
+    display: grid;
+    font-size: 14pt;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* gap: 15px; */
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+
+}
+
+.se2>div>div{
+    background-color: rgb(236, 199, 86);
+    padding: 15px;
+}
+
+.se2>div>div:nth-child(1){
+    grid-column: 1/span 2;
+    grid-row: 1/span 2;
+}
+
+.se3{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    padding: 50px;
+    background-color: bisque;
+}
+
+.se3 img{
+    width: 100%;
+    height: 100%;
+}
+
+.se3 div:nth-child(1){
+    grid-column: 1/span 2;
+    grid-row: 1/span 2;
+}
+
+.se3 div:nth-child(2){
+    grid-column: 2/span 2;
+    grid-row: 2/span 2;
+}
+
+.se3 div:nth-child(3){
+    grid-column: 3/span 2;
+    grid-row: 3/span 2;
+}
+
+.se4{
+    background-color: rgb(229, 148, 148);
+    padding: 70px;
+}
+
+.se4>div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.se4 img{
+    width: 30%;
+}
+
+.se4>div>div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 40px;
+}
+
+.se4 .one{
+    border-bottom: 1px solid;
+}
+
+.se4 .two{
+    border-right: 1px solid;
+}
+
+.se5{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    background-color: aquamarine;
+    padding: 50px;
+}
+
+.se5 div{
+    padding: 50px;
+    background-color: rgb(140, 178, 141);
+    color: aliceblue;
+}
+
+.se5 div:nth-child(1){
+    grid-column: 1/span 2;
+    grid-row: 1/span 3;
+
+    justify-self: justify;
+    align-self: end;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+

@@ -1,0 +1,35 @@
+h1{
+    text-align: center;/*комментарий*/
+    color: #6f330d;
+    background-color: blue;
+    padding: 50px;
+    width: max-content;
+}
+
+h2{
+    text-align: right; /*комментарий*/
+    color: rgb(240, 248, 255);
+    background-color: blueviolet;
+    padding: 30px;
+    width: max-content;
+}
+
+p{
+    text-align: left;
+    font-size: 18pt;
+    font-weight: bolder;
+
+}
+
+.lor_one{
+    color: rgb(40, 91, 136);
+    text-indent: 100px;
+}
+
+.lor_two{
+    font-size: 80ptt;
+    color: rgb(136, 40, 96);
+    text-indent: 46px;
+    background-color: rgb(240, 248, 255);
+}
+
