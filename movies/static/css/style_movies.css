@@ -1,0 +1,19 @@
+body{
+    background-color: black;
+    color: #C0C0C0;
+    font-size: 9pt;
+}
+
+div{
+    display: flex;
+    gap: 50px;
+}
+
+img{
+    height: 600px;
+    width: 480px;
+}
+
+a{
+    color: #FFD700;
+}
