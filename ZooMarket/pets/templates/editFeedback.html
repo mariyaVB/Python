@@ -1,0 +1,23 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Отзывы</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+</head>
+<body>
+    <form method="POST" action="/pets/feedback/">
+        {% csrf_token %}
+        <textarea name="feedback" style="background: rgb(0,0,0, 20%)"></textarea> <br>
+        <input type="submit">
+    </form>
+
+    <h1>Отзывы</h1>
+    {% for item in feedback %}
+    <div style="background: LightSteelBlue">
+        <p>{{ item.text }}</p>
+        <p>{{ item.data_created }}</p>
+        <a href="#"><button>Редактировать</button></a>
+        <a href="#"><button>Удалить</button></a>
+    </div>
+    {% endfor %}
+</body>
+</html>

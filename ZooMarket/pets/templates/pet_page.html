@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+{% block title %}
+    Коты и Собаки
+{% endblock title %}
+
+{% block base_content %}
+    <h2><a href = '..'>Вернуться на главную</a></h2>
+    <h1>Коты и Собаки</h1>
+    <h2>Типы данных отображение на странице</h2>
+        <p>pet_name = {{ pet_name }}</p>
+        <p>pet_str = {{ pet_str }}</p>
+        <p>pet_int = {{ pet_int }}</p>
+        <p>pet_list = {{ pet_list }}</p>
+        <p>pet_dict = {{ pet_dict }}</p>
+        <p>pet_obj = {{ pet_obj }}</p>
+
+    <div class="one">
+        <div>
+            <h2>Фильтры</h2>
+                ------- Списки -------
+                <p>pet_list = {{ pet_list }}</p>
+                <p>pet_list | Фильтр(показать первый элемент списка) = {{ pet_list|first }}</p>
+                <p>pet_list . Фильтр(показать второй элемент списка) = {{ pet_list.1 }}</p>
+
+                ------- Словарь --------
+                <p>pet_dict = {{ pet_dict }}</p>
+                <p>pet_dict . Показать значение ключа dog = {{ pet_dict.dog }}</p>
+        </div>
+
+        <div class="two">
+
+            <div >
+                <h2 class="tag">Шаблонные</h2>
+                ------- Цикл списка -------
+                <ul>
+                    {% for name in pet_list %}
+                        <li>{{ name }}</li>
+                    {% endfor %}
+                </ul>
+
+                ------- Цикл словаря -------
+                <ul>
+                    {% for key, value in pet_dict.items %}
+                        <li>{{ key }} - {{ value }}</li>
+                    {% endfor %}
+                </ul>
+
+                ------- Условия -------
+                <ul>
+                    {% if pet_int > 0 %}
+                        <li><p>Число положительное</p></li>
+                    {% elif pet_int < 0 %}
+                        <li><p>Число отрицательное</p></li>
+                    {% else %}
+                        <li><p>Число равно нулю</p></li>
+                    {% endif %}
+                </ul>
+            </div>
+
+            <div>
+                <h2>теги</h2>
+                ------- Определение переменных -------
+                <ul>
+                    {% with name="Tom" age=29 %}
+                        <li><p>Name: {{ name }}</p></li>
+                        <li><p>Age: {{ age }}</p></li>
+                    {% endwith %}
+                </ul>
+
+                ------- Даты -------
+                <ul>
+                    <li><p>{% now "Y" %}</p></li>
+                    <li><p>{% now "F j Y" %}</p></li>
+                    <li><p>{% now "N, j, Y" %}</p></li>
+                    <li><p>{% now "N j, Y, P" %}</p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock base_content %}
+<!--    <img src="https://gagaru.club/uploads/posts/2023-05/1683024839_gagaru-club-p-milie-kotiki-i-sobachki-vkontakte-21.jpg">-->

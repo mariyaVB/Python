@@ -1,0 +1,61 @@
+body{
+    color: rgba(45, 35, 89, 1);
+    margin: 0;
+    padding-left: 30px;
+    height: 100vh;
+    background: linear-gradient(to bottom right, rgba(154, 120, 188, 1), rgba(184, 174, 246, 1), rgba(205, 249, 255, 1));
+    font-family: 'myFont'
+}
+
+body.light-mode{
+    color: rgba(45, 35, 89, 1);
+    margin: 0;
+    padding-left: 30px;
+    height: 100vh;
+    background: linear-gradient(to bottom right, rgba(154, 120, 188, 1), rgba(184, 174, 246, 1), rgba(205, 249, 255, 1));
+    font-family: 'myFont'
+}
+
+body.dark-mode{
+    color: rgba(255, 255, 255, 1);
+    margin: 0;
+    padding-left: 30px;
+    height: 100vh;
+    background: linear-gradient(to bottom right, rgba(43, 16, 69, 1), rgba(85, 112, 153, 1));
+    font-family: 'myFont'
+}
+
+a {
+    color: rgba(45, 35, 89, 1);
+}
+
+a.light-mode {
+    color: rgba(45, 35, 89, 1);
+}
+
+a.dark-mode {
+    color: rgba(255, 255, 255, 1);
+}
+
+h1{
+    font-size: 50pt;
+}
+
+@font-face {
+  font-family: 'myFont';
+  src: url('../fonts/Zaychik-Regular.ttf');
+}
+
+.one, .two{
+    display: flex;
+    gap: 100px;
+}
+
+.two{
+    gap: 10px;
+}
+
+.tag{
+    text-align: end;
+}
+
