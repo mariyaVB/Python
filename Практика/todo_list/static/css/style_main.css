@@ -1,0 +1,27 @@
+body {
+    background-image: url(https://pibig.info/uploads/posts/2022-12/1669942674_16-pibig-info-p-fon-dlya-yezhednevnika-krasivo-16.jpg);
+    background-size: 1550px 920px;
+}
+.box {
+    display: flex;
+    gap: 3%;
+    justify-content: center;
+}
+
+.box div {
+    width: 100%;
+    padding: 3%;
+}
+
+.add_task {
+    margin-left: 30%;
+}
+
+input.edit_task {
+    width: 400px;
+    height: 60px;
+}
+
+.redaction {
+    margin-top: 50%;
+}
